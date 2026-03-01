@@ -1,8 +1,250 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-	<link rel="stylesheet" href="./main.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>履歴書</title>
+	<link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-	<h1>test</h1>
+
+<header class="top">
+	<div class="top-inner">
+		<div class="name">
+			<h1>ホケット・ライアン</h1>
+			<p class="contact">
+				電話: 080-7891-9471　
+				メール: rhockett94@gmail.com　（メール優先）
+			</p>
+			
+			<p class="languages">
+			英語のネイティブ（イギリス人）　|　日本語 (独学、勉強中)
+			</p>
+			
+			<p id="pr">
+			事故PR
+			
+			２０１８年、修士号を取得しました。長く趣味でソフトやゲーム作成しています。
+			卒業したからから２０２６の４月まで行田市で外国語指導助手で務めました。
+			事務用ソフトやブラウザーオートメーションやゲームなどの作成の経験を持っています。
+			生成AIを用いるプロジェクトも気に入りです。
+			下手な日本語はすみませんが勉強中です。
+			（このページは現在更新中です）
+			</p>
+			
+		</div>
+
+		<nav>
+			<a href="#education">学歴</a>
+			<a href="#work">職歴</a>
+			<a href="#portfolio">ポートフォリオ</a>
+		</nav>
+	</div>
+</header>
+
+<main>
+
+<section id="education">
+	<h2>学歴</h2>
+
+	<div class="entry">
+		<div class="year">2018</div>
+		<div class="details">
+			アベリストウィス大学 ソフト工学の修士号 卒業
+		</div>
+	</div>
+
+	<div class="entry">
+		<div class="year">2013</div>
+		<div class="details">
+			トーキー・ボーイズ・グラマー・スクール高校　卒業
+		</div>
+	</div>
+
+</section>
+
+<section id="work">
+	<h2>職歴</h2>
+
+	
+	<div class="entry">
+		<div class="year">2019–現在</div>
+		<div class="details">
+			行田市教育委員会　外国語指導助手
+		</div>
+	</div>
+
+	<div class="entry">
+		<div class="year">2016-2017</div>
+		<div class="details">
+			アマデウス有限会社　開発者インターン
+		</div>
+	</div>
+	
+	<div class="entry">
+		<div class="year">2021–現在</div>
+		<div class="details">
+			行田市児童センター　ボランティア活動
+		</div>
+	</div>
+	
+	
+</section>
+<section id="skills">
+	<h2>スキル</h2>
+
+	<div class="skills-grid">
+
+		<div class="skill-group">
+			<h3>技術 / 言語</h3>
+			<ul class="skill-list">
+				<li>C#</li>
+				<li>C++（ちょびっと）</li>
+				<li>JavaScript (ブラウザー、NodeJS)</li>
+				<li>HTML5 / CSS</li>
+				<li>Lua</li>
+
+			</ul>
+		</div>
+
+		<div class="skill-group">
+			<h3>業務・分野</h3>
+			<ul class="skill-list">
+				<li>ブラウザオートメーション</li>
+				<li>ゲームソフト制作</li>
+				<li>ゲーム用ネットワーク技術</li>
+				<li>3Dグラフィックス</li>
+				<li>3Dアニメーション（初心者）</li>
+			</ul>
+		</div>
+
+	</div>
+</section>
+<section id="portfolio">
+	<h2>ポートフォリオ</h2>
+	<!--
+	<div class="project">
+		<h3>プロジェクト名</h3>
+		<p class="desc">
+			ここに簡単な説明を書きます。何を作ったのか、目的、特徴など。
+		</p>
+		<p class="tech">
+			使用技術: HTML / CSS / JavaScript
+		</p>
+		<p class="links">
+			<a href="#">デモ</a>
+			<a href="#">ソースコード</a>
+		</p>
+	</div>
+	-->
+	
+	<div class="project">
+		<h3>TRPGのデータ管理アプリ</h3>
+		<p class="desc">
+			NW.jsを活用してデータ管理のアプリ。
+			ウエブテクノロジーでデスクトップアプリを作成しました。
+		</p>
+		
+		<p class="links">
+			<a href="sosmanager1.png">映像１</a>
+			<a href="sosmanager2.png">映像２</a>
+			<a href="https://github.com/botchi09/sos-equipment-manager">GitHub</a>
+		</p>
+	</div>
+	
+	<div class="project">
+		<h3>ロールバック・ネットワーク</h3>
+		<p class="desc">
+			格闘ゲームは活用しているロールバック式ネットコードを実装しました。
+			下手なアニメーションやゲームシステムも作成の実装。
+			ロックステップネットコード式より操作レスポンスが優れています。
+			
+		</p>
+				
+		<p class="links">
+			<a class="" href="https://youtu.be/f2O9HNqwWwM">映像１</a>
+			<a class="" href="https://youtu.be/pjLEUBSBpmo">映像２</a>
+
+			<a href="https://github.com/botchi09/RobloxRollback">GitHub</a>
+		</p>
+	</div>
+	
+	<div class="project">
+		<h3>スクレイピングツール</h3>
+		<p class="desc">
+			NodeJSでスクレイピングツールを作成しました。
+			「Puppeteer」というライブラリでウエブサイトの情報の取得。
+		</p>
+		
+		<p class="links">
+			<a href="scraper.png">実施中の写真</a>
+			<a href="https://github.com/botchi09/stone-website-puppeteer-scraper">GitHub</a>
+		</p>
+	</div>
+	
+	<!--div class="project todo">
+		<h3>TODO climbing game</h3>
+		<p class="desc">
+			vector math. picture demonstration!
+		</p>
+		
+		<p class="links">
+			<a href="https://youtu.be/bYzrbGG2mxw">映像１</a>
+			<a href="https://youtu.be/_mRu7jwwfPQ">映像２</a>
+			<a href="https://github.com/botchi09/rblx-climb-game-framework">GitHub</a>
+		</p>
+	</div-->
+	
+	
+	
+	<div class="project">
+		<h3>魔法使いゲームプロトタイプ</h3>
+		<p class="desc">
+			「アーマード・コア」に影響を受けて、魔法使いバトルゲームのプロトタイプ。
+			エンティティ・コンポーネント・システム（ECS）ですばやく簡単に技を実装しました。
+			カメラとキャラクターの操作も作成しました。			
+		</p>
+		
+		<p class="links">
+			<a href="spelldefexample.png">コードの例</a>
+			<a href="https://www.youtube.com/watch?v=XVLZ9_kiFl0">映像１</a>
+			<a href="https://www.youtube.com/watch?v=5HVhadBwj20">映像２</a>
+			<a href="https://github.com/botchi09/rblx-spellcasting-behavior-framework">GitHub</a>
+		</p>
+	</div>
+
+	<div class="project">
+		<h3>エクセルとワードのファイルをデータ編集</h3>
+		<p class="desc">
+			エクセルのファイルを読んで、テンプレートでワードのファイルの作成のプログラム。
+		</p>
+		
+		<p class="links">
+			<a href="https://github.com/botchi09/bingo-worksheet-node-docx-gen">GitHub</a>
+		</p>
+	</div>
+	
+	<div class="project">
+		<h3>リフレクションでゲームのMOD</h3>
+		<p class="desc">
+			GitHubのリポジトリをフォークして、UnityのゲームのMODを作りました。
+			リフレクションでC#を用いているゲームを改造しました。			
+		</p>
+		
+		<p class="links">
+			<a href="https://github.com/botchi09/Outward-Mods">GitHubのフォーク</a>
+		</p>
+	</div>
+
+
+</section>
+
+</main>
+
+<footer>
+2026
+</footer>
+
 </body>
 </html>
